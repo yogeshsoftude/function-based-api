@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "de5f305a-c5b3-4ba7-9947-2d711e785147",
+		"name": "CrudFunctionBased  Email_pro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "yogeshbaraskar83@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "first_name",
+							"value": "sotude",
+							"type": "default"
+						},
+						{
+							"key": "last_name",
+							"value": "systematix",
+							"type": "default"
+						},
+						{
+							"key": "dob",
+							"value": "2022-11-11",
+							"type": "default"
+						},
+						{
+							"key": "bio",
+							"value": "india",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "sipl@1234",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/registration/?email=user6yopmail.com&first_name=sotude&last_name=systematix&password=sipl@1234&dob=2022-11-11&bio=india",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"registration",
+						""
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "user6yopmail.com"
+						},
+						{
+							"key": "first_name",
+							"value": "sotude"
+						},
+						{
+							"key": "last_name",
+							"value": "systematix"
+						},
+						{
+							"key": "password",
+							"value": "sipl@1234"
+						},
+						{
+							"key": "dob",
+							"value": "2022-11-11"
+						},
+						{
+							"key": "bio",
+							"value": "india"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "yogeshbaraskar83@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "sipl@1234",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "e65b6aa697980e42b6c262ed38e6089645e64562",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "user11@yopmail.com",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "sipl@1231",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/get_data/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"get_data",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "ankit",
+							"type": "default"
+						},
+						{
+							"key": "last_name",
+							"value": "softude",
+							"type": "default"
+						},
+						{
+							"key": "dob",
+							"value": "2022-12-11",
+							"type": "default"
+						},
+						{
+							"key": "bio",
+							"value": "indian",
+							"type": "default"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "user4@yopmail.com",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/Update_data/143/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"Update_data",
+						"143",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout_user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "activate",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Reset_pass link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "user13@yopmail.com",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/reset_password/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"reset_password",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forget_pass",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/reset_password/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"reset_password",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_data_patch",
+			"request": {
+				"method": "PATCH",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_data",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "e65b6aa697980e42b6c262ed38e6089645e64562",
+						"type": "default"
+					}
+				]
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
